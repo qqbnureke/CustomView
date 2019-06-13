@@ -1,0 +1,158 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\59dfef42e1382941f4e957eaed50d615\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\3feb5553c93add72cc84c36947e3581c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\08ca5365b46c650c1e1b20604c125689\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\f12eda62554e95bb4b5ac0d27b3179a7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\4a9c31db95c9438ff4e8881853e0bedb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\824df8cb7ea61e58a9eb60a667b0b710\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6ef694e72e5c00c9e0ecca5e3b10cae6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\90af4884828c42332ff5e2c09095e882\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6e5c2ae470c1e93c7e0106d6872db8bd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\436825e7341e6e22cf62529621182113\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6493fc93b7780dd73ad7cc3a2682314a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\068262b737d912adc3e92e8695109893\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\32c9f9270d17467ef6a636e60fdcbdef\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\98358dac1e4ceba71a6e724ef9a19c92\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\396c1af8bbf61b6563ff5977515d76db\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\2322a7e16b0fd7d1ca5bf59cc540eb9b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\12a98c0af6dd03fbbf608e33c49d4402\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\9b987a3ea0e3ee66686da7afa1ee0328\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\3928f5e3e0bb0f8ac373457d0b0cbb28\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\9982a1a6b13b67eb80c8c970525a7cc0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\ad498536ae06ce01ac8d3b124c9b5ad6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\4aa01890507f3b63699e9fa8a871853f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\dbe32a0b886ea09815eb0b98891a4e38\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\7dd21357bff812b72bee24d06a0c1537\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\fc79df76f79119cd0a8d0e8d17361389\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\f274a2b20a3ca9d3ee4da3d12edf4243\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\a63a45f5342e10dd356f8c1dcd06cd09\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:1-22:12
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:5:5-20:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\3feb5553c93add72cc84c36947e3581c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\3feb5553c93add72cc84c36947e3581c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\2322a7e16b0fd7d1ca5bf59cc540eb9b\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\2322a7e16b0fd7d1ca5bf59cc540eb9b\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\12a98c0af6dd03fbbf608e33c49d4402\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\12a98c0af6dd03fbbf608e33c49d4402\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\2322a7e16b0fd7d1ca5bf59cc540eb9b\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.nurda.customview.ViewGroupExample
+ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:12:9-63
+	android:name
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:12:19-51
+activity#com.nurda.customview.MainActivity
+ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:13:9-19:20
+	android:name
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:13:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:14:13-18:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml:17:27-74
+uses-sdk
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\59dfef42e1382941f4e957eaed50d615\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\59dfef42e1382941f4e957eaed50d615\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\3feb5553c93add72cc84c36947e3581c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\3feb5553c93add72cc84c36947e3581c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\08ca5365b46c650c1e1b20604c125689\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\08ca5365b46c650c1e1b20604c125689\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\f12eda62554e95bb4b5ac0d27b3179a7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\f12eda62554e95bb4b5ac0d27b3179a7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\4a9c31db95c9438ff4e8881853e0bedb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\4a9c31db95c9438ff4e8881853e0bedb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\824df8cb7ea61e58a9eb60a667b0b710\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\824df8cb7ea61e58a9eb60a667b0b710\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6ef694e72e5c00c9e0ecca5e3b10cae6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6ef694e72e5c00c9e0ecca5e3b10cae6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\90af4884828c42332ff5e2c09095e882\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\90af4884828c42332ff5e2c09095e882\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6e5c2ae470c1e93c7e0106d6872db8bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6e5c2ae470c1e93c7e0106d6872db8bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\436825e7341e6e22cf62529621182113\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\436825e7341e6e22cf62529621182113\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6493fc93b7780dd73ad7cc3a2682314a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\6493fc93b7780dd73ad7cc3a2682314a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\068262b737d912adc3e92e8695109893\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\068262b737d912adc3e92e8695109893\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\32c9f9270d17467ef6a636e60fdcbdef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\32c9f9270d17467ef6a636e60fdcbdef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\98358dac1e4ceba71a6e724ef9a19c92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\98358dac1e4ceba71a6e724ef9a19c92\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\396c1af8bbf61b6563ff5977515d76db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\396c1af8bbf61b6563ff5977515d76db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\2322a7e16b0fd7d1ca5bf59cc540eb9b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\2322a7e16b0fd7d1ca5bf59cc540eb9b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\12a98c0af6dd03fbbf608e33c49d4402\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\12a98c0af6dd03fbbf608e33c49d4402\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\9b987a3ea0e3ee66686da7afa1ee0328\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\9b987a3ea0e3ee66686da7afa1ee0328\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\3928f5e3e0bb0f8ac373457d0b0cbb28\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\3928f5e3e0bb0f8ac373457d0b0cbb28\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\9982a1a6b13b67eb80c8c970525a7cc0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\9982a1a6b13b67eb80c8c970525a7cc0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\ad498536ae06ce01ac8d3b124c9b5ad6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\ad498536ae06ce01ac8d3b124c9b5ad6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\4aa01890507f3b63699e9fa8a871853f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\4aa01890507f3b63699e9fa8a871853f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\dbe32a0b886ea09815eb0b98891a4e38\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\dbe32a0b886ea09815eb0b98891a4e38\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\7dd21357bff812b72bee24d06a0c1537\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\7dd21357bff812b72bee24d06a0c1537\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\fc79df76f79119cd0a8d0e8d17361389\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\fc79df76f79119cd0a8d0e8d17361389\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\f274a2b20a3ca9d3ee4da3d12edf4243\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\f274a2b20a3ca9d3ee4da3d12edf4243\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\a63a45f5342e10dd356f8c1dcd06cd09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Nurda\.gradle\caches\transforms-2\files-2.1\a63a45f5342e10dd356f8c1dcd06cd09\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Nurda\AndroidStudioProjects\CustomView\app\src\main\AndroidManifest.xml
