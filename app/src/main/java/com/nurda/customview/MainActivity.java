@@ -1,36 +1,20 @@
 package com.nurda.customview;
 
-import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
-import com.nurda.customview.model.Airport;
 import com.nurda.customview.model.CardInfo;
-import com.nurda.customview.model.Flight;
 import com.nurda.customview.views.CardView;
 import com.nurda.customview.views.EmojiView;
-import com.nurda.customview.views.FlightView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-    private static final Flight FLIGHT = new Flight(
-            "AA 1",
-            "Sep 18, 2017",
-            "07:57",
-            "11:19",
-            "Duration: 6h 22m",
-            new Airport("JFK", "New York, US", "John F. Kennedy International Airport"),
-            new Airport("LAX", "Los Angeles, US", "Los Angeles International Airport")
-    );
 
     private static final CardInfo cardInfo = new CardInfo(
             "travel",
             "New York City",
-            "Day reappeared. The tempest still raged with Day reappeared. " +
-                    "The tempest still raged with Day reappeared. The tempest still raged " +
-                    "with Day reappeared. The tempest still raged with ",
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry." +
+                    " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
             R.drawable.imagee,
             "Button 1", "Button 2");
 
@@ -41,14 +25,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       // final CardView customFlightView = findViewById(R.id.flight_view);
+
+
+        final CardView customFlightView = findViewById(R.id.flight_view);
 //        customFlightView.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
 //                Toast.makeText(MainActivity.this, "Flying", Toast.LENGTH_SHORT).show();
 //            }
 //        });
-      //  customFlightView.bindFlight(cardInfo);
+        customFlightView.bindFlight(cardInfo);
 
         emojiView = findViewById(R.id.emoji_view);
 

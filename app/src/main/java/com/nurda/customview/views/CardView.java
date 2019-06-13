@@ -159,18 +159,20 @@ public class CardView extends ViewGroup {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         widthMeasureSpec = getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec);
 
-        measureChild(cardImageView, widthMeasureSpec, heightMeasureSpec);
-        final int bodyTextWidth = widthMeasureSpec - paddingHorizontal;
+        final int bodyTextWidth = widthMeasureSpec - paddingHorizontal * 2;
         final int footerButtonWidth = widthMeasureSpec / 2 - paddingHorizontal;
         final int headerTextWidth = widthMeasureSpec / 2 - paddingHorizontal;
 
         //Specify max width for the components
+        cardImageView.setMaxWidth(bodyTextWidth);
+        descriptionTextView.setMaxWidth(bodyTextWidth);
         action1.setMaxWidth(footerButtonWidth);
         action2.setMaxWidth(footerButtonWidth);
 
         measureChild(topicTextView, widthMeasureSpec, heightMeasureSpec);
         measureChild(subtopicTextView, widthMeasureSpec, heightMeasureSpec);
-        measureChild(descriptionTextView, footerButtonWidth, heightMeasureSpec);
+        measureChild(cardImageView, bodyTextWidth, heightMeasureSpec);
+        measureChild(descriptionTextView, bodyTextWidth, heightMeasureSpec);
         measureChild(action1, footerButtonWidth, heightMeasureSpec);
         measureChild(action2, footerButtonWidth, heightMeasureSpec);
 
@@ -220,7 +222,7 @@ public class CardView extends ViewGroup {
         descriptionTextView.layout(
                 leftBorder,
                 heightUsed,
-                descriptionTextView.getMeasuredWidth(),
+                leftBorder + descriptionTextView.getMeasuredWidth(),
                 heightUsed + descriptionTextView.getMeasuredHeight()
         );
 
@@ -229,13 +231,13 @@ public class CardView extends ViewGroup {
         action1.layout(
                 leftBorder,
                 heightUsed,
-                centerHorizontal - action1.getMeasuredWidth(),
+                leftBorder + action1.getMeasuredWidth(),
                 heightUsed + action1.getMeasuredHeight()
         );
         action2.layout(
                 centerHorizontal + paddingHorizontal,
                 heightUsed,
-                centerHorizontal + action1.getMeasuredWidth() + paddingHorizontal,
+                centerHorizontal + action2.getMeasuredWidth() + paddingHorizontal,
                 heightUsed + action2.getMeasuredHeight()
         );
         heightUsed += Math.max(action1.getMeasuredHeight(), action2.getMeasuredHeight()) + paddingInner;
