@@ -2,6 +2,7 @@ package com.nurda.customview.views;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.RectF;
@@ -28,14 +29,17 @@ public class CardView extends ViewGroup {
     private int subtopicTextColor;
     private int descriptionTextColor;
     private int dividerColor;
+    private int buttonTextColor;
 
     private int paddingHorizontal;
     private int paddingVertical;
     private int paddingInner;
-    private int dividerHeight;
+    private float dividerWidth;
     private int cornerRadius;
 
+    private float headerTextSize;
     private float subtopicTextSize;
+    private float buttonTextSize;
     private float descriptionTextSize;
 
     private Paint paint;
@@ -49,80 +53,107 @@ public class CardView extends ViewGroup {
     private ImageView cardImageView;
 
     public CardView( Context context) {
-        super(context);
-        init(context);
+        this(context, null);
     }
 
     public CardView( Context context, AttributeSet attrs) {
         super(context, attrs);
-        init(context);
+        init(attrs);
     }
 
     public CardView( Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context);
+        init(attrs);
     }
 
-    private void init(Context context){
+    private void init(AttributeSet attrs){
         setClipToPadding(false);
 
-        // Prepare colors
-        headerColor = ContextCompat.getColor(context, R.color.primary);
-        headerTextColor = ContextCompat.getColor(context, R.color.white_text);
-        cardBackgroundColor = ContextCompat.getColor(context, R.color.white);
-        subtopicTextColor = ContextCompat.getColor(context, R.color.primary_text);
-        descriptionTextColor = ContextCompat.getColor(context, R.color.secondary_text);
-        dividerColor = ContextCompat.getColor(context, R.color.divider);
+        headerColor = ContextCompat.getColor(getContext(), R.color.primary);
+        headerTextColor = ContextCompat.getColor(getContext(), R.color.white_text);
+        cardBackgroundColor = ContextCompat.getColor(getContext(), R.color.white);
+        subtopicTextColor = ContextCompat.getColor(getContext(), R.color.primary_text);
+        descriptionTextColor = ContextCompat.getColor(getContext(), R.color.secondary_text);
+        dividerColor = ContextCompat.getColor(getContext(), R.color.divider);
+        buttonTextColor = ContextCompat.getColor(getContext(), R.color.primary);
 
-        // Prepare paddings
         paddingHorizontal = dpToPx(8);
         paddingVertical = dpToPx(8);
         paddingInner = dpToPx(8);
-        dividerHeight = dpToPx(1);
+        dividerWidth = dpToPx(1);
         cornerRadius = dpToPx(16);
 
-        // Prepare text sizes
-        subtopicTextSize = 14;
-        descriptionTextSize = 12;
+        headerTextSize = 14f;
+        subtopicTextSize = 12f;
+        buttonTextSize = 14f;
+        descriptionTextSize = 12f;
 
         paint = new Paint();
         rect = new RectF();
 
+        setupAttributes(attrs);
 
-        // Instantiate, setup and attach child views
-        topicTextView = new TextView(context);
-        topicTextView.setTextSize(subtopicTextSize);
+        attachChildViews();
+    }
+
+    private void setupAttributes(AttributeSet attrs){
+
+        TypedArray ta = getContext().obtainStyledAttributes(attrs, R.styleable.CardView);
+
+        headerColor = ta.getColor(R.styleable.CardView_headerColor, headerColor);
+        headerTextColor = ta.getColor(R.styleable.CardView_headerTextColor, headerTextColor);
+        cardBackgroundColor = ta.getColor(R.styleable.CardView_cardBackgroundColor, cardBackgroundColor);
+        descriptionTextColor = ta.getColor(R.styleable.CardView_descriptionTextColor, descriptionTextColor);
+        dividerColor = ta.getColor(R.styleable.CardView_dividerColor, dividerColor);
+        buttonTextColor = ta.getColor(R.styleable.CardView_buttonTextColor, buttonTextColor);
+
+        headerTextSize = ta.getDimension(R.styleable.CardView_headerTextSize, headerTextSize);
+        descriptionTextSize = ta.getDimension(R.styleable.CardView_descriptionTextSize, descriptionTextSize);
+        dividerWidth = ta.getDimension(R.styleable.CardView_dividerWidth, dividerWidth);
+
+
+        ta.recycle();
+    }
+
+    private void attachChildViews(){
+        topicTextView = new TextView(getContext());
+        topicTextView.setTextSize(headerTextSize);
         topicTextView.setTextColor(headerTextColor);
         topicTextView.setGravity(Gravity.START);
         addView(topicTextView);
 
-        subtopicTextView = new TextView(context);
+        subtopicTextView = new TextView(getContext());
         subtopicTextView.setTextSize(subtopicTextSize);
         subtopicTextView.setTextColor(subtopicTextColor);
         subtopicTextView.setGravity(Gravity.START);
         addView(subtopicTextView);
 
-        descriptionTextView = new TextView(context);
+        descriptionTextView = new TextView(getContext());
         descriptionTextView.setTextSize(descriptionTextSize);
         descriptionTextView.setTextColor(descriptionTextColor);
         descriptionTextView.setGravity(Gravity.START);
         addView(descriptionTextView);
 
-        action1 = new Button(context);
-        action1.setTextSize(subtopicTextSize);
-        action1.setTextColor(headerTextColor);
-        action1.setGravity(Gravity.START);
+        action1 = new Button(getContext());
+        action1.setTextSize(buttonTextSize);
+        action1.setTextColor(buttonTextColor);
+        action1.setText("Добавить");
+        action1.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+        action1.setGravity(Gravity.CENTER);
         addView(action1);
 
-        action2 = new Button(context);
-        action2.setTextSize(subtopicTextSize);
-        action2.setTextColor(headerTextColor);
-        action2.setGravity(Gravity.END);
+        action2 = new Button(getContext());
+        action2.setTextSize(buttonTextSize);
+        action2.setTextColor(buttonTextColor);
+        action2.setText("Перейти");
+        action2.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+        action2.setGravity(Gravity.CENTER);
         addView(action2);
 
-        cardImageView = new ImageView(context);
+        cardImageView = new ImageView(getContext());
         cardImageView.setImageResource(R.drawable.imagee);
         addView(cardImageView);
+
     }
 
     @Override
@@ -145,10 +176,10 @@ public class CardView extends ViewGroup {
         canvas.drawRoundRect( rect, cornerRadius, cornerRadius, paint);
         canvas.restore();
 
-        paint.setStrokeWidth(dividerHeight);
+        paint.setStrokeWidth(dividerWidth);
         paint.setColor(dividerColor);
         final float largeDividerY = descriptionTextView.getBottom() + paddingInner
-                + dividerHeight / 2f + 1;
+                + dividerWidth / 2f + 1;
         canvas.drawLine(0, largeDividerY, width, largeDividerY, paint);
 
         super.dispatchDraw(canvas);
@@ -163,7 +194,6 @@ public class CardView extends ViewGroup {
         final int footerButtonWidth = widthMeasureSpec / 2 - paddingHorizontal;
         final int headerTextWidth = widthMeasureSpec / 2 - paddingHorizontal;
 
-        //Specify max width for the components
         cardImageView.setMaxWidth(bodyTextWidth);
         descriptionTextView.setMaxWidth(bodyTextWidth);
         action1.setMaxWidth(footerButtonWidth);
@@ -178,13 +208,14 @@ public class CardView extends ViewGroup {
 
         final int heightUsed = paddingVertical +
                 topicTextView.getMeasuredHeight() +
+                paddingInner + paddingInner +
+                subtopicTextView.getMeasuredHeight() +
                 paddingInner +
                 cardImageView.getMeasuredHeight() +
                 paddingInner +
                 descriptionTextView.getMeasuredHeight() +
-                paddingInner +
-                Math.max(action1.getMeasuredHeight(), action2.getMeasuredHeight()) +
-                paddingVertical;
+                paddingInner + paddingInner +
+                Math.max(action1.getMeasuredHeight(), action2.getMeasuredHeight());
 
         setMeasuredDimension(widthMeasureSpec, heightUsed);
     }
@@ -199,8 +230,6 @@ public class CardView extends ViewGroup {
 
         int heightUsed = paddingVertical;
 
-
-        //Layout rows by one-one
         topicTextView.layout(
                 leftBorder,
                 heightUsed,
@@ -210,12 +239,21 @@ public class CardView extends ViewGroup {
 
         heightUsed += topicTextView.getMeasuredHeight() + paddingInner;
 
-        cardImageView.layout(
+        subtopicTextView.layout(
                 leftBorder,
                 heightUsed,
-                leftBorder + cardImageView.getMeasuredWidth(),
+                leftBorder + subtopicTextView.getMeasuredWidth(),
+                heightUsed + subtopicTextView.getMeasuredHeight()
+        );
+        heightUsed += subtopicTextView.getMeasuredHeight() + paddingInner;
+
+        cardImageView.layout(
+                centerHorizontal - cardImageView.getMeasuredWidth() / 2,
+                heightUsed,
+                centerHorizontal + cardImageView.getMeasuredWidth() - cardImageView.getMeasuredWidth() / 2,
                 heightUsed + cardImageView.getMeasuredHeight()
         );
+
 
         heightUsed += cardImageView.getMeasuredHeight();
 
@@ -226,7 +264,7 @@ public class CardView extends ViewGroup {
                 heightUsed + descriptionTextView.getMeasuredHeight()
         );
 
-        heightUsed += descriptionTextView.getMeasuredHeight() + paddingInner;
+        heightUsed += descriptionTextView.getMeasuredHeight() + paddingInner*2;
 
         action1.layout(
                 leftBorder,
@@ -235,23 +273,20 @@ public class CardView extends ViewGroup {
                 heightUsed + action1.getMeasuredHeight()
         );
         action2.layout(
-                centerHorizontal + paddingHorizontal,
+                action1.getMeasuredWidth() + paddingHorizontal*2,
                 heightUsed,
-                centerHorizontal + action2.getMeasuredWidth() + paddingHorizontal,
+                action1.getMeasuredWidth() + action2.getMeasuredWidth() + paddingHorizontal*3,
                 heightUsed + action2.getMeasuredHeight()
         );
-        heightUsed += Math.max(action1.getMeasuredHeight(), action2.getMeasuredHeight()) + paddingInner;
-
 
     }
 
-    public void bindFlight(CardInfo cardInfo){
+    public void bindCard(CardInfo cardInfo){
         topicTextView.setText(cardInfo.getTopic());
         subtopicTextView.setText(cardInfo.getSubtopic());
         descriptionTextView.setText(cardInfo.getDescription());
         cardImageView.setImageResource(cardInfo.getImage());
-        action1.setText(cardInfo.getAction1());
-        action2.setText(cardInfo.getAction2());
+
     }
 
     private int dpToPx(int dp){

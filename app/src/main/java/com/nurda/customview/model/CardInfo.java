@@ -5,22 +5,16 @@ public class CardInfo {
     private String topic;
     private String description;
     private int image;
-    private String action1;
-    private String action2;
 
     public CardInfo( String subtopic,
                         String topic,
                         String description,
-                        int image,
-                        String action1,
-                        String action2) {
+                        int image) {
 
         this.subtopic = subtopic;
         this.topic = topic;
         this.description = description;
         this.image = image;
-        this.action1 = action1;
-        this.action2 = action2;
     }
 
     public String getSubtopic() {
@@ -39,11 +33,4 @@ public class CardInfo {
         return image;
     }
 
-    public String getAction1() {
-        return action1;
-    }
-
-    public String getAction2() {
-        return action2;
-    }
 }

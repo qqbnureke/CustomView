@@ -13,4 +13,16 @@
             <enum name="shocked" value="3" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="CardView">
+        <attr name="headerColor" format="color"/>
+        <attr name="headerTextColor" format="color"/>
+        <attr name="descriptionTextColor" format="color" />
+        <attr name="buttonTextColor" format="color"/>
+        <attr name="cardBackgroundColor" format="color" />
+        <attr name="dividerColor" format="color"/>
+        <attr name="headerTextSize" format="dimension"/>
+        <attr name="descriptionTextSize" format="dimension"/>
+        <attr name="dividerWidth" format="dimension"/>
+    </declare-styleable>
 </resources>
